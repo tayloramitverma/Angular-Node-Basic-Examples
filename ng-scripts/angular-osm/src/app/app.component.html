@@ -1,0 +1,12 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<vo-ui-osm-view 
+[showDebugInfo]="true"
+[showControlsZoom]="true"
+[showControlsCurrentLocation]="true"
+(addressChanged)="onAddressChange($event)"
+>
+</vo-ui-osm-view>

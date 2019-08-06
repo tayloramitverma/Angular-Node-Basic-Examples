@@ -1,0 +1,8 @@
+.drop-zone {
+  min-height: 81px;
+  max-width: 506px;
+  border: 1px solid grey;
+}
+.mat-fab.mat-accent, .mat-flat-button.mat-accent, .mat-mini-fab.mat-accent, .mat-raised-button.mat-accent {
+  background-color: #555;
+}

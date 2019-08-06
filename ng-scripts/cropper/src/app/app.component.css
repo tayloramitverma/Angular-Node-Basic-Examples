@@ -1,0 +1,8 @@
+.cropperblock {
+    position: absolute;
+    width: 100%;
+    background: #ddd;
+    top: 0;
+    margin: 0 auto;
+    left: 0;
+}

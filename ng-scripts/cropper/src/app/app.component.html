@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<input type="file" (change)="fileChangeEvent($event)" />
+
+
+<div class="cropperblock" *ngIf="blockdisplay">
+<image-cropper
+    [imageChangedEvent]="imageChangedEvent"
+    [maintainAspectRatio]="true"
+    [aspectRatio]="4 / 3"
+    [resizeToWidth]="128"
+    format="png"
+    (imageCropped)="imageCropped($event)"
+    (imageLoaded)="imageLoaded()"
+    (cropperReady)="cropperReady()"
+    (loadImageFailed)="loadImageFailed()"
+></image-cropper>
+
+<img [src]="croppedImage" />
+</div>
+<router-outlet></router-outlet>
