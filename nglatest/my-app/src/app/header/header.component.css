@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    color: #f92e71;
+}
+.navbar-brand img{
+  height: 27px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.86);
+    font-weight: 600;
+}
+.bg-dark {
+    background-color: #f92d72!important;
+}
+.container.marketing {
+    margin-top: 50px;
+}

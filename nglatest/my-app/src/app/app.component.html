@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<main role="main">
+<div class="container marketing">
+  <hr class="featurette-divider">
+	<h2 (click)="onClickMe()">Here are some links to help you start: </h2>
+	<p *ngIf="showText">Hello Mr. Ram, I hope you are fine and doing great.</p>
+  <hr class="featurette-divider">
+	<router-outlet></router-outlet>
+
+  <hr class="featurette-divider">
+</div>
+
+  <footer class="container">
+        <p class="float-right"><a routerLink="/dashboard">Back to top</a></p>
+        <p>© 2017-2018 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+</main>
+

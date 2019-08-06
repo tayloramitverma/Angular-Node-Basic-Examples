@@ -1,0 +1,26 @@
+doctype html
+html
+include ./includes/head.jade
+title=title
+body
+	h1
+		a(href="/")
+			| Av Blogs List using Jade engine
+	ul
+		each item in blogsList
+			li
+				a(href='/post/#{item.id}')=item.blog_title
+				if item.blog_content
+					p=item.blog_content
+				if item.blog_image
+					a(href='/post/#{item.id}')
+						img(src=item.blog_image,alt="User image", width="200px" )
+
+	- if(type=='single')
+		| Single Blog Page
+		form(role='form',method='post' action='/add')
+			textarea(value='',name='comment',placeholder='Enter Comment', autofocus, required).form-control
+			button(type='submit').btn.btn-primary
+				| Submit
+
+include ./includes/foot.jade            

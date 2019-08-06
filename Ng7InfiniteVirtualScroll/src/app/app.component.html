@@ -1,0 +1,12 @@
+<div class="virtual-scroll-wrap">
+<cdk-virtual-scroll-viewport itemSize="20">
+
+    <li *cdkVirtualFor="let p of gusers;" class="animated lightSpeedIn item-wrap">
+      <div class="info-wrap">
+          <h4>{{p.author}}</h4>
+          <h6>{{p.date}}</h6>
+      </div>
+    </li>
+  
+</cdk-virtual-scroll-viewport>
+</div>

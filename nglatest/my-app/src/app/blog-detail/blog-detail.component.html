@@ -1,0 +1,17 @@
+<app-header></app-header>
+
+<p>
+  blog-detail works!  
+
+  <button (click)="goBack()">Go Back</button>
+</p>
+<div class="row" *ngIf="postdetail">
+  
+<div class="col-md-12"><img [src]='postdetail.blog_image' ></div>
+<div class="col-md-12">
+		<hr class="featurette-divider">
+		<h1>{{postdetail.blog_title}}</h1>
+
+		<div [innerHTML]='postdetail.blog_content | nl2br'></div>
+</div>
+</div>

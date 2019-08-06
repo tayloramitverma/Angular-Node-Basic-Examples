@@ -1,0 +1,26 @@
+<app-header></app-header>
+<p>
+  blog-list works!
+</p>
+
+<div *ngFor="let record of gusers">
+<div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading" (click)="getBlog(record.id)"> <span class="text-muted">{{record.blog_title}}</span></h2>
+            <p class="lead">{{record.blog_content | slice:0:200}}</p>
+            <a routerLink="/blog/{{record.id}}">Read more <i class="fa fa-angle-double-right"></i>
+
+</a>
+          </div>
+          <div class="col-md-5" (click)="getBlog(record.id)">
+            <img class="featurette-image img-fluid mx-auto" [src]='record.blog_image'  data-holder-rendered="true">
+          </div>
+</div>
+<hr class="featurette-divider">
+</div>
+
+<div *ngIf="postdetail">
+  
+Name: {{postdetail.blog_title}}
+
+</div>
